@@ -2,22 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CompSci - Learn Computer Science</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to External CSS -->
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Test</h1>
-    <p>This is a simple HTML file for testing GitHub Pages.</p>
 
-    <h2>Image Test</h2>
-    <img src="images/test-image.jpg" alt="Test Image" width="300">
-    <p>If the image doesn't appear, make sure you've uploaded it to the correct folder.</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">CompSci</a>
+        <button class="menu-toggle">☰</button>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Topics</a>
+            <a href="#">Tutorials</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-    <h2>PDF Test</h2>
-    <p><a href="docs/sample.pdf" target="_blank">Download Sample PDF</a></p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to CompSci</h1>
+        <p>Your go-to platform for learning Computer Science.</p>
+        <a href="#topics" class="btn">Get Started</a>
+    </header>
 
-    <h2>GitHub Pages Link</h2>
-    <p>If this file is hosted on GitHub Pages, the URL will look like:</p>
-    <code>https://username.github.io/repository-name/index.html</code>
+    <!-- Topics Section -->
+    <section id="topics" class="container">
+        <h2>Explore Computer Science Topics</h2>
+        <div class="grid-container">
+            <div class="grid-item">Programming Basics</div>
+            <div class="grid-item">Data Structures</div>
+            <div class="grid-item">Algorithms</div>
+            <div class="grid-item">Cybersecurity</div>
+            <div class="grid-item">Networking</div>
+            <div class="grid-item">AI & Machine Learning</div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section class="container">
+        <h2>Hands-On Tutorials</h2>
+        <div class="box">Learn Python from Scratch</div>
+        <div class="box">Web Development Guide</div>
+        <div class="box">Building a Simple Game</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 CompSci | Empowering Students in Computer Science.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to External JavaScript -->
 </body>
 </html>
