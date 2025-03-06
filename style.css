@@ -30,6 +30,15 @@
     margin-right: 10px;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
 .menu {
     display: flex;
 }
@@ -43,6 +52,28 @@
 
 .menu a:hover {
     background-color: #555;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+    }
+
+    .menu a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
 
 /* Hero Section */
@@ -80,45 +111,24 @@
     background-color: #555;
 }
 
-/* Topics Section */
-.topics {
+/* Explore Section */
+.explore, .tutorials {
     padding: 50px 20px;
-    background-color: #fff;
     text-align: center;
 }
 
-.topics h2 {
+.explore h2, .tutorials h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.topic-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.explore ul, .tutorials ul {
+    list-style: none;
 }
 
-.topic-item {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    width: 200px;
-    transition: 0.3s;
-}
-
-.topic-item:hover {
-    background-color: #e4e4e4;
-}
-
-.topic-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.topic-item p {
-    font-size: 1rem;
-    color: #666;
+.explore li, .tutorials li {
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 /* Footer */
