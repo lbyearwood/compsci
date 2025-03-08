@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="menu-toggle">☰</button>
+
     <nav class="navbar">
-        <a href="#" onclick="loadContent('home.html')">Home</a>
-        <a href="#" onclick="loadContent('topics.html')">Topics</a>
-        <a href="#" onclick="loadContent('about.html')">About</a>
-        <a href="#" onclick="loadContent('projects.html')">Projects</a>
+        <a href="#" class="logo">CompSci</a>
+        <ul class="nav-links">
+            <li><a href="#" onclick="loadContent('home.html')">Home</a></li>
+            <li><a href="#" onclick="loadContent('topics.html')">Topics</a></li>
+            <li><a href="#" onclick="loadContent('about.html')">About</a></li>
+            <li><a href="#" onclick="loadContent('projects.html')">Projects</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
     </nav>
-    <p>testasfdasfasdfadsfdasfasdfsfs</p>
 
     <div id="content"></div> <!-- Content will be loaded here dynamically -->
 
     <script src="script.js"></script>
-
-    
 </body>
 </html>

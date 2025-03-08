@@ -1,5 +1,5 @@
 // code no. 563
-
+// Function to load content dynamically
 function loadContent(page) {
     fetch(page)
         .then(response => response.text())
@@ -14,20 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
     loadContent('home.html');
 });
 
-// Select menu toggle button and menu
+// Select menu toggle button and navbar
 const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
+const navbar = document.querySelector(".navbar");
 
-// Toggle menu visibility when button is clicked
+// Toggle navbar visibility when button is clicked
 menuToggle.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    navbar.classList.toggle("active");
 });
 
-// Close menu when a link is clicked (for better user experience)
-document.querySelectorAll(".menu a").forEach(link => {
+// Close navbar when a link is clicked (for better user experience)
+document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
-        menu.style.display = "none";
+        navbar.classList.remove("active");
     });
 });
+
+
 
 
