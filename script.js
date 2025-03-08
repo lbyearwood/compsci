@@ -11,7 +11,7 @@ function loadContent(page) {
 
 // Load home content by default when the page loads
 document.addEventListener("DOMContentLoaded", function () {
-    loadContent('home.html');
+    loadContent('index.html');
 });
 
 // Select menu toggle button and navbar
