@@ -1,4 +1,3 @@
-// code no. 563
 // Function to load content dynamically
 function loadContent(page) {
     fetch(page)
@@ -11,7 +10,7 @@ function loadContent(page) {
 
 // Load home content by default when the page loads
 document.addEventListener("DOMContentLoaded", function () {
-    loadContent('homepage.html');
+    loadContent('home.html');
 });
 
 // Select menu toggle button and navbar
@@ -29,7 +28,6 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         navbar.classList.remove("active");
     });
 });
-
 
 
 
