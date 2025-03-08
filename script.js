@@ -27,3 +27,5 @@ document.querySelectorAll(".menu a").forEach(link => {
         menu.style.display = "none";
     });
 });
+
+// code no. 101
