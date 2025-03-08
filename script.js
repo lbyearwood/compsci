@@ -1,3 +1,5 @@
+// code no. 101
+
 function loadContent(page) {
     fetch(page)
         .then(response => response.text())
@@ -28,4 +30,4 @@ document.querySelectorAll(".menu a").forEach(link => {
     });
 });
 
-// code no. 101
+
